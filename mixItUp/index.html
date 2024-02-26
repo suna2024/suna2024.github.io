@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フィルタリング機能とモーダルを実装</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+</head>
+<body>
+    <h1>フィルタリング機能とモーダルを実装</h1>
+    <div class="container">
+        <div class="btn-wrapper">
+            <button type="button" data-filter="all">すべて</button>
+            <button type="button" data-filter=".motorcycle">自動二輪</button>
+            <button type="button" data-filter=".bicycle">自転車</button>
+            <button type="button" data-filter=".country">生産国</button>
+            <button type="button" data-sort="order:asc">人気順</button>
+        </div><!-- /.btn-wrapper -->
+        <div class="contents">
+
+
+            <div class="mix motorcycle bicycle country" data-order="5">
+                <a href="https://www.youtube.com/watch?v=WZoMANhvA8s" data-fancybox>
+                    <img src="img/cycle_1_01.jpg" alt="">
+                </a>
+            </div><!-- /mix -->
+
+            <div class="mix motorcycle" data-order="4">
+                <a href="https://www.youtube.com/watch?v=Knl7TDmWwTU" data-fancybox>
+                    <img src="img/cycle_1_02.jpg" alt="">
+                </a>
+            </div><!-- /mix -->
+
+            <div class="mix motorcycle" data-order="3">
+                <a href="https://www.youtube.com/watch?v=7XYcvtcu038" data-fancybox>
+                    <img src="img/cycle_1_03.jpg" alt="">
+                </a>
+            </div><!-- /mix -->
+
+            <div class="mix bicycle" data-order="2">
+                <a href="https://www.youtube.com/watch?v=ZdZ35_zfI5A&t=739s" data-fancybox>
+                    <img src="img/cycle_2_01.jpg" alt="">
+                </a>
+            </div><!-- /mix -->
+
+            <div class="mix bicycle" data-order="1">
+                <a href="https://www.youtube.com/watch?v=p3n-zsRUD5Y" data-fancybox>
+                    <img src="img/cycle_2_02.jpg" alt="">
+                </a>
+            </div><!-- /mix -->
+
+            <div class="mix bicycle" data-order="6">
+                <a href="https://www.youtube.com/watch?v=YgGLvhw7wAc" data-fancybox>
+                    <img src="img/cycle_2_03.jpg" alt="">
+                </a>
+            </div><!-- /mix -->
+
+            <div class="mix country" data-order="7">
+                <a href="https://www.youtube.com/watch?v=GvQEaP_1gNE" data-fancybox>
+                    <img src="img/cycle_3_01.jpg" alt="">
+                </a>
+            </div><!-- /mix -->
+
+            <div class="mix country" data-order="8">
+                <a href="https://www.youtube.com/watch?v=YMrS7ECHgL8" data-fancybox>
+                    <img src="img/cycle_3_02.jpg" alt="">
+                </a>
+            </div><!-- /mix -->
+
+            <div class="mix country" data-order="9">
+                <a href="https://www.youtube.com/watch?v=sfP61r5A0dU" data-fancybox>
+                    <img src="img/cycle_3_03.jpg" alt="">
+                </a>
+            </div><!-- /mix -->
+
+
+        </div><!-- /.contents -->
+    </div><!-- /.container -->
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+    
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <script src="js/mixitup.js"></script>
+    <script>
+        let mixer = mixitup('.contents');
+    </script>
+</body>
+</html>
