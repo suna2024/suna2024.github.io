@@ -1,7 +1,0 @@
-        //resizeÇÃê›íË
-        $(Window).on('resize load',function(){
-            if(window.matchMedia('(min-width:900px)').matches){
-                $('#g-nav').removeClass('move');
-                    $('#ham-btn').removeClass('is-active');
-            }
-        });
